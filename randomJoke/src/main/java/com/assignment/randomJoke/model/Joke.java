@@ -30,23 +30,6 @@ public class Joke {
                 }
             }
 
-//            JSONObject chuckNorrisJoke = new JSONObject(jsonResponceData.toString());
-//
-//            JSONArray category = (JSONArray) chuckNorrisJoke.get("categories");
-//            String createdAt = (String) chuckNorrisJoke.get("created_at");
-//            String iconURL = (String) chuckNorrisJoke.get("icon_url");
-//            String id = (String) chuckNorrisJoke.get("id");
-//            String updatedAt = (String) chuckNorrisJoke.get("updated_at");
-//            String url = (String) chuckNorrisJoke.get("url");
-//            String value = (String) chuckNorrisJoke.get("value");
-//
-//            System.out.println(category.toString());
-//            System.out.println(createdAt);
-//            System.out.println(iconURL);
-//            System.out.println(id);
-//            System.out.println(updatedAt);
-//            System.out.println(url);
-//            System.out.println(value);
             System.out.println(jsonResponceData.toString());
         }
     }
