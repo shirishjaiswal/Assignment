@@ -15,28 +15,25 @@ public class HandleMail {
     private String subject;
     private String message;
     private String twoStepVerificationCode;
-
-    void sendMail() {
+    protected void sendMail() {
 
         //host : gmail in smtp :
-        String host = "smtp.gmail.com";
+       Properties properties = System.getProperties();
 
-        Properties properties = System.getProperties();
-
-        System.out.println(properties);
-
-        properties.setProperty("mail.smtp.host", host);
+        properties.setProperty("mail.smtp.host", "smtp.gmail.com");
         properties.setProperty("mail.smtp.port", "465");
         properties.setProperty("mail.smtp.ssl.enable", "true");
         properties.setProperty("mail.smtp.auth", "true");
 
         //session
+        Authenticator authenticator =
         Authenticator authenticator = new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(sender, twoStepVerificationCode);
             }
         };
+
         Session mainSession = Session.getInstance(properties, authenticator);
 
         //create message object
@@ -51,7 +48,7 @@ public class HandleMail {
             mimeMessage.setSubject(subject);
             //message
             mimeMessage.setText(message);
-
+            //sending message
             Transport.send(mimeMessage);
         } catch (MessagingException e) {
             e.printStackTrace();
