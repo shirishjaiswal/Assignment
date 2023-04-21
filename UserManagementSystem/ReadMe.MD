@@ -67,3 +67,6 @@ The UserDatabase class has a constructor that initializes the userDB list with s
 1. **userDelete():** deletes a user from the database.
 
 Note that this implementation does not persist the data to any external database, it just maintains the list of users in memory.
+
+### Assignment Summary
+The User Management System is a web-based application designed to manage user information. The system allows users to create, update, and delete user profiles, including personal details and contact information. The system is built using Java Spring framework. The objective of this is to get better understanding of **CRUD** operations using the HTTP Requests and have hands on practical experience.
