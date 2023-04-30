@@ -4,6 +4,20 @@
 ## **Language :-** Java
 ---
 ## **Data Flow**
+### **Application Properties**
+This is a configuration file for a Spring Boot application using the H2 in-memory database.
+
+1. **spring.datasource.url** specifies the database URL.
+1. **spring.datasource.driverClassName** specifies the JDBC driver class.
+1. **spring.datasource.username and spring.datasource.password** specify the credentials to use for database authentication.
+1. **spring.jpa.database-platform** specifies the Hibernate dialect to use for this database.
+1. **spring.h2.console.enabled** enables the H2 console, which is a web-based database management interface.
+
+The following properties are specific to Hibernate and control how SQL queries are displayed in the console:
+
+1. **spring.jpa.properties.hibernate.show_sql** specifies whether to display the SQL statements executed by Hibernate in the console.
+1. **spring.jpa.properties.hibernate.use_sql_comments** specifies whether to include comments in the SQL output.
+1. **spring.jpa.properties.hibernate.format_sql** specifies whether to format the SQL output for readability.
 ### **Controller Package**
 This package consist of **JobController**. The controller contains several methods for handling HTTP requests related to jobs.
 The **@RestController** annotation indicates that this class is a REST controller that will handle HTTP requests.
@@ -110,4 +124,4 @@ The class has the following fields:
 
 
 ### **Assignment Summary**
-The User Management is a web-based application designed to manage user information. The system allows users to create, update, and delete user profiles. The system is built using Java Spring framework. The objective of this is to get better understanding of **CRUD** operations using the HTTP Requests and the main Focus of this assignment is on **Validation Dependencie** and have hands on practical experience.
+The Job search portal is a web-based application designed to manage Jobs. The system allows users to create, update, and delete Job profiles. The system is built using Java Spring framework. The objective of this is to get better understanding of **CRUD** operations using the HTTP Requests and the main Focus of this assignment is on connecting the **H2DB** and have hands on practical experience.
