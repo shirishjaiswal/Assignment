@@ -26,11 +26,11 @@ public class JobController {
     }
 
     @GetMapping(value = "/byCompanyName/{companyName}")
-    public Optional<Job> getJobByName(@PathVariable String companyName) {
+    public Iterable<Job> getJobByName(@PathVariable String companyName) {
         return jobService.getJobsByCompanyName(companyName);
     }
 
-    @GetMapping(value = "/orderBy/asc")
+    @GetMapping(value = "/orderBySalary/asc")
     public Iterable<Job> orderBySalary() {
         return jobService.orderBySalary();
     }

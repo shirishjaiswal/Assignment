@@ -22,7 +22,7 @@ public class JobService {
         return jobRepo.findById(Integer.parseInt(id));
     }
 
-    public Optional<Job> getJobsByCompanyName(String companyName) {
+    public Iterable<Job> getJobsByCompanyName(String companyName) {
         return jobRepo.findByCompanyName(companyName);
     }
 
@@ -54,8 +54,8 @@ public class JobService {
     }
 
     public String deleteJobByCompanyName(String companyName) {
-        jobRepo.deleteByCompanyName(companyName);
-        if(jobRepo.existsByCompanyName(companyName)) {
+        jobRepo.deleteJobByCompanyName(companyName);
+        if(!jobRepo.existsByCompanyName(companyName)) {
             return "All Jobs from Company " + companyName + " has been Deleted";
         }
         return "All Jobs from Company " + companyName + " has not been Deleted";

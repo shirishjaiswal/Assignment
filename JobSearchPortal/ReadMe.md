@@ -121,7 +121,6 @@ The class has the following fields:
 1. **companyName:** The name of the company that posted the job.
 1. **employerName:** The name of the employer who posted the job.
 1. **jobType:** The category of the job, which is an enumerated type.
-
-
+___
 ### **Assignment Summary**
 The Job search portal is a web-based application designed to manage Jobs. The system allows users to create, update, and delete Job profiles. The system is built using Java Spring framework. The objective of this is to get better understanding of **CRUD** operations using the HTTP Requests and the main Focus of this assignment is on connecting the **H2DB** and have hands on practical experience.

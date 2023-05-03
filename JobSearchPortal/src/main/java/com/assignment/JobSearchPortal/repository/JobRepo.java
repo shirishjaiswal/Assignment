@@ -17,9 +17,8 @@ import java.util.Optional;
 public interface JobRepo extends JpaRepository<Job, Integer> {
 
     //Custom Finders
-    public Optional<Job> findByCompanyName(String companyName);
+    public Iterable<Job> findByCompanyName(String companyName);
     public List<Job> findByJobType(JobCategory categoryType);
-    public void deleteByCompanyName(String companyName);
     public boolean existsByCompanyName (String companyName);
     public Iterable<Job> findByOrderBySalary();
 
@@ -35,4 +34,9 @@ public interface JobRepo extends JpaRepository<Job, Integer> {
     @Transactional
     @Query(value = "update job set salary = :salary where id = :id", nativeQuery = true)
     public int updateJobSetSalaryForId(@Param("salary")Double salary, @Param("id")Integer id);
+
+    @Modifying
+    @Transactional
+    @Query(value = "Delete from job where company_name = :companyName", nativeQuery = true)
+    void deleteJobByCompanyName(@Param("companyName") String companyName);
 }
