@@ -122,6 +122,3 @@ The class has five fields:
 1. **zipcode:** A String field representing the postal code.
 
 The **@GeneratedValue** annotation is used to specify that the primary key value for a new Address object will be generated automatically by the database, using an identity-based strategy.
-___
-### **Assignment Summary**
-The University Event Management web-based application designed to manage Event and the Students. The system allows users to create, update, and delete Event and Student profiles. The system is built using Java Spring framework. The objective of this is to get better understanding of **CRUD** operations using the HTTP Requests and the main Focus of this assignment is on connecting the **H2DB** and have hands on practical experience.
