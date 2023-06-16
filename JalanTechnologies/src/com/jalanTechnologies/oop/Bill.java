@@ -51,7 +51,7 @@ public class Bill {
 			totalBill = generateBillForSUV();
 		}
 		if(totalBill > 10000) {
-			System.out.println("== complimentary cleaning ==");
+			System.out.println("== Congratulations You have Recived FREE Cleaning ==");
 		}
 		System.out.println("Total Bill - " + totalBill);
 	}
