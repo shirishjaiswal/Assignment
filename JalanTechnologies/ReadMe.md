@@ -2,6 +2,8 @@
 
 This is a Java code package for a simple program that generates a bill for car services based on the type of vehicle and selected services. It includes classes for vehicles, services, and a billing system.
 
+## Sample Output
+![image](https://github.com/shirishjaiswal/Assignment/assets/98471211/12d51686-37ce-4ae7-a12e-5a0e83a43477)
 ## Getting Started
 
 To run the program, follow these steps:
@@ -28,5 +30,3 @@ The code package is structured as follows:
 ## Usage
 
 When you run the program, you will be prompted to select a car type (Hatchback, Sedan, or SUV) and choose services from the provided options. The program will calculate the total bill based on your selections and display the bill details.
-
-**Note:** The code provided here is just a sample implementation and does not include all possible services or vehicle types. You can extend the code and add more services or vehicle types as needed.
