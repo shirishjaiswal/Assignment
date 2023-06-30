@@ -35,35 +35,6 @@ To get started with the Employee Management System, follow these steps:
 4. Run the application on a local server.
 5. Access the application through the provided URL and start managing employee data.
 
-## Employee API
-1.Get all employee
-
-```
-https://localhost:8080/employee
-```
-2.Get a employee by id
-```
-https://localhost:8080/employee
-```
-3.Update employee
-
-   Other parameter can be also update by employee except jobRole and salary details.
-
-   
-<img width="356" alt="image" src="https://github.com/satyam1459/Employee_Report/assets/114183531/58a3d40b-e722-486a-9bbc-c5b7554ffa69">
-
-
-## Admin API
-1.Add an employee
-
-<img width="356" alt="image" src="https://github.com/satyam1459/Employee_Report/assets/114183531/b022dde3-7d7d-4e4c-954f-3eb4ef2d3de2">
-
-
-## Report API
-1.Add performance for a day and attendance by emp_id
-
-<img width="356" alt="image" src="https://github.com/satyam1459/Employee_Report/assets/114183531/a005c925-a443-4020-84cb-4f6a38a3b3d6">
-
 ## Conclusion
 
 The Employee Management System using Spring Boot is a user-friendly and efficient application that streamlines the management of employee data. This application provides an easy-to-use interface for HR personnel to manage employee information and allows employees to view and update their own personal details. With its advanced features such as reporting and user management, this application is a valuable tool for any organization looking to manage their employee data effectively.
